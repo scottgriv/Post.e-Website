@@ -1,0 +1,634 @@
+/* CSS Style Sheet for the layout of the website */
+
+/* Import ProximaNova font */
+/* Regular style */
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/fonts/ProximaNova/proximanova-regular-webfont.tff") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "ProximaNova", Arial, sans-serif; /* Use custom font */
+  font-weight: 400; /* This will use the regular font */
+  font-size: 20px; /* Set default font size */
+  background-color: #000000;
+  color: white;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  padding: 50px;
+}
+
+h1 {
+  font-family: "ProximaNova", Arial, sans-serif; /* Use custom font */
+  color: #fff; /* Text color - adjust as needed */
+  text-align: center; /* Center align the text */
+}
+
+h2 {
+  font-family: "ProximaNova", Arial, sans-serif; /* Use custom font */
+  color: #FFFF00; /* Text color - adjust as needed */
+  text-align: center; /* Center align the text */
+}
+
+footer {
+  font-family: "ProximaNova", Arial, sans-serif; /* Use custom font */
+}
+
+a {
+  color: #4164FF; /* 4164FF links */
+}
+
+/* Customize the horizontal rule */
+hr {
+  border: none; /* Remove the default border */
+  border-top: 2px solid #FF0000; /* Set the top border color and thickness */
+  width: 67%; /* Set the desired width */
+  margin-bottom: 20px auto; /* Center the <hr> element */
+}
+
+
+.support-logo {
+  max-width: 100%; /* To make sure image never exceeds its parent width */
+  height: auto; /* Maintains the aspect ratio */
+  width: 217px;
+}
+
+.desktop-logo,
+.mobile-logo {
+  max-width: 100%; /* To make sure image never exceeds its parent width */
+  height: auto; /* Maintains the aspect ratio */
+  border-top-left-radius: 10px; /* Top left corner */
+  border-top-right-radius: 10px; /* Top right corner */
+}
+
+#pagecontent {
+  background-color: #000000;
+  background: linear-gradient(to bottom, #000000, #292929);
+  padding: 0;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  
+}
+
+#pagefoot {
+  font-size: 0.8em; /* Adjust the font size to make it smaller */
+  color: #9c9c9c; /* Font color */
+  text-align: center; /* Center the text */
+  margin: 0 auto;
+  max-width: 1200px; /* Maximum width for the content */
+  padding: 15px; /* Padding on the sides for responsiveness */
+}
+
+#contentarea {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ensures the div takes the full width */
+}
+
+#contentarea main {
+  max-width: 1200px;
+  width: 100%; /* Ensures the main content doesn't exceed the max-width */
+  text-align: left;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.social-links-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links,
+.social-links-footer {
+  display: flex;
+  flex-wrap: wrap; /* Ensure items can wrap */
+  gap: 12px; /* Space between icons */
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.social-links a,
+.social-links-footer a {
+  color: #FFFF00; /* Icon color */
+  font-size: 24px; /* Icon size */
+  transition: transform 0.3s ease; /* Smooth transition for the transform */
+}
+
+.social-links a:hover,
+.social-links-footer a:hover {
+  color: #FF9900; /* Green color for links hover effect, change as needed */
+  transform: translateY(-5px); /* Moves the button up */
+}
+
+.fa-code-fork,
+.fa-building,
+.fa-code-branch {
+  font-size: 22px; /* Shrink Fork Icon size */
+}
+
+/* This is to ensure that hover links retain the intended style */
+.regular-link {
+  color: #FFFF00;
+}
+
+/* This is to ensure that hover links retain the intended style */
+.regular-link:hover {
+  color: #FF9900;
+}
+
+/* This is to ensure that visited links retain the intended style */
+.regular-link:visited {
+  color: #FFFF00;
+}
+
+/* Specific rule for visited links when hovered */
+.regular-link:visited:hover {
+  color: #FF9900;
+}
+
+.regular-link-2 {
+  color: #FFFF00;
+}
+
+/* This is to ensure that hover links retain the intended style */
+.regular-link-2:hover {
+  color: #FF9900;
+}
+
+/* This is to ensure that visited links retain the intended style */
+.regular-link-2:visited {
+  color: #FFFF00;
+}
+
+/* Specific rule for visited links when hovered */
+.regular-link-2:visited:hover {
+  color: #FF9900;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-0.5em);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-0.125em);
+  }
+  64%,
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+.code-inline {
+  background-color: #2f363d; /* Darker gray background */
+  color: #ffffff; /* White text color */
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier,
+    monospace; /* Monospace font for code */
+  padding: 0.2em 0.4em; /* Padding around the text */
+  font-size: 85%; /* Adjusted font size */
+  border-radius: 6px; /* Rounded corners for the background */
+}
+
+.code-block {
+  background-color: #333;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  width: 75%;
+  padding: 10px;
+  margin: 20px auto; /* Center the block horizontally */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: left;   /* Keeps content inside aligned to the left */
+}
+
+.content-center {
+  text-align: center;
+}
+
+.intro-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.intro-list {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0;
+}
+
+.intro-list li {
+  position: relative;
+  padding-left: 2rem; /* Space for the checkmark */
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ASCII-style checkmark */
+.intro-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: green;
+  font-weight: bold;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+/* Scrolling Popup Arrow Button */
+.scroll-to-top {
+  background: #FF0000;
+  border: none;
+  border-radius: 50%; /* Makes it a circle */
+  padding: 0;
+  width: 65px; /* Set width and height to be the same for a circle */
+  height: 65px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex; /* Ensures the icon centers inside the button */
+  justify-content: center; /* Centers the icon horizontally */
+  align-items: center; /* Centers the icon vertically */
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's above other content */
+  position: fixed;
+  bottom: 75px; /* Closer to the bottom edge */
+  right: 75px; /* Closer to the right edge */
+  cursor: pointer;
+  opacity: 0; /* Start with the button invisible */
+  visibility: hidden; /* Hide the button */
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Smooth transition for both opacity and visibility */
+}
+
+.scroll-to-top.visible {
+  opacity: 1; /* Full visibility when the button should be shown */
+  visibility: visible; /* Make the button visible */
+}
+
+.scroll-to-top i {
+  font-size: 24px; /* Larger font size for the icon */
+  color: #fff;
+}
+
+.block-quote {
+  font-family: "ProximaNova", sans-serif;
+  font-weight: 400; /* This will use the regular weight */
+  font-style: italic; /* This will use the italic style */
+  color: #7f7f7f; /* Font color */
+}
+
+.subtitle {
+  text-align: center;
+  color: #4dbced; /* Font color */
+  font-size: 30px;
+  font-style: italic;
+}
+
+.subtitle-2 {
+  text-align: center;
+  color: #9354FF; /* Font color */
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* For WebKit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #1A1A1A; /* Background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FF9900; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Roundness of the scrollbar thumb */
+  border: 3px solid #1A1A1A; /* Padding around scrollbar thumb */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Makes the scrollbar thinner */
+  scrollbar-color: #FF9900 #1A1A1A; /* Thumb and track colors */
+}
+
+/* For Internet Explorer and Edge */
+body {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+/* Media Queries */
+/* When screen width is less than 768px, hide elements with the 'responsive-hide' class */
+@media screen and (max-width: 804px) {
+  .responsive-hide {
+    display: none;
+  }
+}
+
+/* Features */
+.feature-icon {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  width: 40px !important;
+  height: 40px !important;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.feature-item {
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  opacity: 0.6;
+  background-color: #000000;
+  transform: scale(0.9);
+  min-width: 100%;
+  min-height: 220px;
+  box-sizing: border-box;
+
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Thin white border */
+  box-shadow: 0px 1px 2px #575757;
+}
+
+.feature-item.in-view {
+  transform: scale(1.0);
+  opacity: 1;
+}
+
+.feature-item img {
+  width: 100%;
+  max-width: 250px;
+  min-width: 125px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.feature-item .feature-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-item .feature-title {
+  color: #FF9900;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-item .feature-description {
+  font-size: 1em;
+  color: #FFFFFF;
+  transition: transform 0.3s ease-in-out;
+  padding-right: 10px;
+  padding-bottom: 10px; /* Add a little breathing room */
+}
+
+.feature-preview-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between images */
+  flex-wrap: wrap; /* Optional: allows wrapping on smaller screens */
+  margin: 2rem auto;
+}
+
+.feature-preview-row img {
+  width: 18%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff; /* Light background */
+  color: #181717; /* Dark GitHub-like text color */
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+  border: 1px solid #181717; /* Optional: GitHub border look */
+}
+
+.github-button:hover {
+  background-color: #181717; /* Dark on hover */
+  color: #ffffff; /* Light text on hover */
+}
+
+
+.github-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem; /* optional spacing */
+}
+
+/* Default: show desktop title, hide mobile */
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  /* Reset box-sizing */
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  .subtitle {
+    text-align: center;
+    color: #FF9900; /* Font color */
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  .subtitle-2 {
+    text-align: center;
+    color: #FF9900; /* Font color */
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  hr {
+    width: 96%; /* Set the desired width */
+  }
+
+  .responsive-hide {
+    display: inline;
+  }
+
+  body {
+    padding: 15px;
+    font-size: 17px; /* Set default font size */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  .desktop-logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #pagecontent {
+    border-radius: 5px;
+    box-shadow: none;
+    width: 100%; /* Ensures page content fits the screen width */
+    max-width: none; /* Overrides any max-width set elsewhere */
+    padding: 0 15px; /* Adds padding to prevent content from touching the edges */
+    box-sizing: border-box;
+  }
+
+  #contentarea main {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  #pagecontent,
+  #contentarea,
+  #contentarea main {
+    overflow-x: hidden;
+  }
+
+  img,
+  video,
+  iframe,
+  .projects-image,
+  .banner-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .faq-header-small {
+    font-size: 25px;
+  }
+
+  #pagefoot {
+    font-size: 10px;
+  }
+
+  .scroll-to-top {
+    width: 50px; /* Set width and height to be the same for a circle */
+    height: 50px;
+    bottom: 35px; /* Closer to the bottom on small screens */
+    right: 35px; /* Closer to the right on small screens */
+  }
+
+  .social-links a {
+    flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
+    width: calc(
+      8%
+    ); /* Adjust width to fit 5 items per row, accounting for gap */
+  }
+
+  .feature-icon {
+    position: absolute;
+    top: 20px;
+    right: -30px; /* Move it further to the right */
+    width: 25px !important;  /* Adjust the size as needed */
+    height: 25px !important; /* Adjust the size as needed */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure the image fits within the set dimensions */
+
+  }
+
+  .feature-item img {
+    width: 140px;
+    height: 100%;
+    object-fit: cover; /* fills the space, may crop */
+    border-radius: 8px;
+  }  
+
+  .features-container {
+    gap: 10px;
+  }
+
+  .feature-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mobile-only {
+    display: block;
+    margin-bottom: 10px;
+    color: #FF9900;
+    font-size: 1.5em;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .feature-content {
+    text-align: center;
+  }
+
+.feature-description,
+.feature-description-list {
+  margin-top: 10px;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.feature-content {
+  text-align: center;
+}
+
+}

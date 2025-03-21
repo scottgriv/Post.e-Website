@@ -51,4 +51,19 @@ testem.log
 .DS_Store?
 *.DS_Store
 Thumbs.db
-Icon?
+
+# Project dependencies
+.cache
+node_modules
+yarn-error.log
+package-lock.json
+
+# Build directory
+/public
+.DS_Store
+
+.vscode/
+portfolio-website.code-workspace
+
+**/.DS_Store
+/Icon?
