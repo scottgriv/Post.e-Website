@@ -21,8 +21,9 @@
 <h1 align="center">🟨 🟧 🟥 Post.e Website 🟥 🟧 🟨</h1>
 <br>
 <p align="center">
-    <a href="https://app.netlify.com/sites/darkcastle/deploys"><img src="https://api.netlify.com/api/v1/badges/d9e331fd-4e1c-4a1a-8279-992b48b89705/deploy-status" alt="Netlify Status" /></a>
+    <a href="https://app.netlify.com/sites/post-e/deploys"><img src="https://api.netlify.com/api/v1/badges/5ba542a7-2ea2-49f8-9980-e864b077588b/deploy-status" alt="Netlify Status" /></a>
 </p>
+
 <p align="center">
 <b>Post.e</b> is a multi-programming language, social media platform example for iOS. Share photos, videos, text, any file type, follow others, and enjoy a dynamic newsfeed. Designed for developers and tech enthusiasts learning how to structure their own social media application.
 </p>
@@ -55,7 +56,7 @@ This project is released under the terms of the **MIT License**, which permits u
 ---
 
 <div align="center">
-    <a href="https://github.com/scottgriv/Business-Website" target="_blank">
+    <a href="https://github.com/scottgriv/Post.e-Website" target="_blank">
         <img src="./docs/images/icon-rounded.png" width="100" height="100"/>
     </a>
 </div>

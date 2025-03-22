@@ -162,7 +162,7 @@ export default function Features() {
       <div class="feature-preview-row">
         <img src="/images/features/phone_feed.gif" alt="Feed" />
         <img src="/images/features/phone_post.gif" alt="Post" />
-        <img src="/images/features/phone_splash.png" alt="Splash" />
+        <img src="/images/features/phone_splash.png" alt="Splash" class="splash-only-desktop" />
         <img src="/images/features/phone_profile.gif" alt="Profile" />
         <img src="/images/features/phone_interaction.gif" alt="Interaction" />
       </div>

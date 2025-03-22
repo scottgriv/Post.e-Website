@@ -346,14 +346,6 @@ body {
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
-/* Media Queries */
-/* When screen width is less than 768px, hide elements with the 'responsive-hide' class */
-@media screen and (max-width: 804px) {
-  .responsive-hide {
-    display: none;
-  }
-}
-
 /* Features */
 .feature-icon {
   position: absolute;
@@ -474,6 +466,22 @@ body {
 
 .desktop-only {
   display: block;
+}
+
+/* Media Queries */
+/* When screen width is less than 768px, hide elements with the 'responsive-hide' class */
+@media screen and (max-width: 804px) {
+  .responsive-hide {
+    display: none;
+  }
+
+  .splash-only-desktop {
+    display: none !important;
+  }
+
+  h1 {
+    font-size: 2rem; /* Smaller font size on mobile */
+  }
 }
 
 /* Mobile Styles */
