@@ -174,6 +174,14 @@ export default function Features() {
             front-end.
           </li>
           <li>
+            Users can create profiles, follow others, and post messages similar
+            to Twitter/X.
+          </li>
+          <li>
+            Supports media-rich posts with photos, videos, documents, and file
+            attachments.
+          </li>
+          <li>
             Supports multiple server-side languages including PHP, Python,
             Node.js, Ruby, Go, Java, Rust, and Perl.
           </li>
@@ -184,14 +192,6 @@ export default function Features() {
           <li>
             Designed to teach users how to build their own social media app from
             the ground up.
-          </li>
-          <li>
-            Users can create profiles, follow others, and post messages similar
-            to Twitter/X.
-          </li>
-          <li>
-            Supports media-rich posts with photos, videos, documents, and file
-            attachments.
           </li>
         </ul>
         <div class="github-button-wrapper">
