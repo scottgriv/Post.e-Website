@@ -44,10 +44,10 @@ const features = [
     title: "Profile",
     description: [
       "View your Followers, Following, and Post count, with interactive segues to the Interaction screen.",
-      "Sort your Profile feed by Newest, Oldest, Loved, Pinned, or Replied (descending).",
+      "Sort your Profile feed by Newest, Oldest, Loved, Pinned, or Replied.",
       "Edit your Profile: update your username, change/remove your profile picture, or delete your account.",
       "Create new Posts, pull to refresh, and scroll to load more Posts in chunks of 25.",
-      "Post cells support actions like pinning, replying, loving, deleting, and viewing attachments.",
+      "Post rows support actions like pinning, replying, loving, deleting, and viewing attachments.",
     ],
     imgSrc: "/images/features/phone_profile.gif",
   },
@@ -56,7 +56,7 @@ const features = [
     description: [
       "Reply to a Post on a dedicated screen, with the original Post displayed in the header.",
       "Supports replying to a Reply — with unlimited nesting depth.",
-      "Sort the Reply feed by: Newest, Oldest, Loved, or Replied counts (all in descending order).",
+      "Sort the Reply feed by: Newest, Oldest, Loved, or Replied counts.",
     ],
     imgSrc: ["/images/features/phone_reply_2.png"],
   },
@@ -72,7 +72,7 @@ const features = [
   {
     title: "Attachments",
     description: [
-      "Add photos, videos, or any file type from your Camera, Photo Library, or Files app.",
+      "While you're entering a Post, you can add photos, videos, or any file type from your Camera, Photo Library, or Files app.",
       "All file types are supported, including media, documents, archives, and more.",
     ],
     imgSrc: ["/images/features/phone_attachments.png"],
@@ -81,7 +81,6 @@ const features = [
     title: "Settings",
     description: [
       "View the current Post.e version number from the app’s Info.plist.",
-      "Browse open source libraries used in Post.e along with their LICENSE files.",
       "Select your preferred language and view available translations supported by Post.e.",
       "Displays your current folder directory used for file attachments, including toggling the sample files folder.",
       "Change your password or log out, which also ends your server session.",
