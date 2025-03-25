@@ -90,7 +90,7 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <img
-                  src="https://cdn.buymeacoffee.com/buttons/v2/default-black.png"
+                  src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
                   alt="Buy Me A Coffee"
                   className="support-logo"
                 />
