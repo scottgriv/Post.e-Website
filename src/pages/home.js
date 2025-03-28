@@ -170,8 +170,8 @@ export default function Features() {
       <div className="intro-list-container">
         <ul className="intro-list">
           <li>
-            An iOS mobile application built using Swift and Objective-C for the
-            front-end.
+            <b>Post.e</b> is an open source iOS mobile application built using Swift and Objective-C for the
+            client side.
           </li>
           <li>
             Users can create profiles, follow others, and post messages similar
@@ -182,11 +182,11 @@ export default function Features() {
             attachments.
           </li>
           <li>
-            Supports multiple server-side languages including PHP, Python,
+            Supports multiple server-side languages, including PHP, Python,
             Node.js, Ruby, Go, Java, Rust, and Perl.
           </li>
           <li>
-            Backed by a MySQL database with JSON-based data interchange and
+            Powered by a MySQL-compatible MariaDB database, with JSON-based data interchange and
             built-in API support.
           </li>
           <li>
