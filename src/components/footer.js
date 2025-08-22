@@ -10,14 +10,7 @@ const Footer = () => {
       <hr />
       <div id="pagefoot" style={{ display: showFooter ? "block" : "none" }}>
         <div className="social-links-wrapper">
-          <div className="social-links-footer" >
-          <a
-              href="https://nightowllabs.io"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Icon name="NOL" className="bounce" />
-            </a>
+          <div className="social-links-footer">
             <a
               href="https://github.com/scottgriv/Post.e"
               target="_blank"
@@ -31,6 +24,9 @@ const Footer = () => {
               rel="noreferrer"
             >
               <i className="fa-solid fa-code-fork fa-bounce"></i>
+            </a>
+            <a href="https://nightowllabs.io" target="_blank" rel="noreferrer">
+              <Icon name="NOL" className="bounce" />
             </a>
             <a
               href="mailto:support@nightowllabs.io"
@@ -99,7 +95,10 @@ const Footer = () => {
           </div>
         </div>
         <div id="pagefoot">
-          Copyright © 2024-{new Date().getFullYear()} Scott Grivner & Night Owl Labs, LLC.<br />All Rights Reserved.
+          Copyright © 2024-{new Date().getFullYear()} Scott Grivner & Night Owl
+          Labs, LLC.
+          <br />
+          All Rights Reserved.
         </div>
       </div>
     </>
