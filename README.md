@@ -36,8 +36,6 @@ This is official website for **[Post.e](https://github.com/scottgriv/Post.e)**.
 
 - Visit the website that's built by this repository [here](https://post-e.netlify.app).
 - Check out the **Post.e** main repository [here](https://github.com/scottgriv/Post.e).
-- Visit our **Business Website** repository, which this website was based on [here](https://github.com/scottgriv/Business-Website), if you would like to use it to create your own website (See the `README` for instructions).
-- Finally, see our **Business Website** in action [here](https://nightowllabs.io).
 
 ## License
 
